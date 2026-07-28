@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build & Tag Docker Image') {
             steps {
-                sh "docker build -t jithin56/cartservice:latest /src"
+                sh "docker build -t jithin56/cartservice:latest ./src"
             }
         }
         
